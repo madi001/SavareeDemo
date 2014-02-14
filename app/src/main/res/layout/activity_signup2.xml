@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        style="@style/SignUpFormContainer"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_logo_1024" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/red_dot" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="#FD4E4E" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/red_dot" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="#FD4E4E" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/red_dot" />
+        </LinearLayout>
+
+        <EditText
+            style="@style/formField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CNIC" />
+
+        <EditText
+            style="@style/formField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Institute / Workplace"/>
+
+
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_next_bg"
+            android:text="NEXT"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</FrameLayout>
