@@ -29,6 +29,10 @@
         <activity
             android:name="com.demo.savareedemo.SigninActivity"
             android:label="@string/title_activity_signin" >
+        </activity>
+        <activity
+            android:name="com.demo.savareedemo.ChooserActivity"
+            android:label="@string/title_activity_chooser" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

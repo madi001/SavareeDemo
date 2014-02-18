@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_margin ="20dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:background="@drawable/driver"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:text="Tab if you are a driver?"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#D8D8D8" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_margin ="20dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:background="@drawable/passenger"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:text="Tab if you are a Passenger?"/>
+    </LinearLayout>
+
+</LinearLayout>
