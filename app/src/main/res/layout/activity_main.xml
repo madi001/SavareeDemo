@@ -70,9 +70,9 @@
             android:id="@+id/next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/btn_next_bg"
+            style="@style/formButton"
             android:text="NEXT"
+            android:gravity="center"
             android:textColor="#fff"
             android:textSize="18sp" />
     </LinearLayout>

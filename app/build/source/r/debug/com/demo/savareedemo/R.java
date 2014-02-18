@@ -875,7 +875,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070015;
         public static final int action_menu_presenter=0x7f070016;
         public static final int action_mode_close_button=0x7f070024;
-        public static final int action_settings=0x7f07003d;
+        public static final int action_settings=0x7f07003e;
         public static final int activity_chooser_view_content=0x7f070025;
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
@@ -918,6 +918,7 @@ containing a value of this type.
         public static final int showCustom=0x7f070007;
         public static final int showHome=0x7f070004;
         public static final int showTitle=0x7f070006;
+        public static final int signin=0x7f07003d;
         public static final int split_action_bar=0x7f07001e;
         public static final int submit_area=0x7f070039;
         public static final int tabMode=0x7f070002;
@@ -1149,7 +1150,8 @@ containing a value of this type.
         public static final int Widget_AppCompat_ProgressBar=0x7f0b0083;
         public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0b0084;
         public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b0085;
-        public static final int formField=0x7f0b0086;
+        public static final int formButton=0x7f0b0086;
+        public static final int formField=0x7f0b0087;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.

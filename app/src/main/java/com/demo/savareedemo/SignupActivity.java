@@ -1,7 +1,6 @@
 package com.demo.savareedemo;
 
 import android.app.Activity;
-
 import android.os.Bundle;
 
 public class SignupActivity extends Activity {
