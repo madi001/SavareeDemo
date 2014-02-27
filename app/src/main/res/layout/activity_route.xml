@@ -1,0 +1,90 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/routemap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.MapFragment"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/maptextview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableLeft="@drawable/locationmarker"
+                android:text="DHA, Phase 3, Lahore"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/maptextview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="18 KM"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/maptextview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:drawableLeft="@drawable/locationmarker"
+                android:text="Gulberg 2, Lahore"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/maptextview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="19 mins"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/maptextview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="April 2, 2012"
+                android:drawableLeft="@drawable/time"
+                android:layout_weight="1"/>
+            <TextView
+                style="@style/maptextview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="06:00 pm"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/formButton"
+            android:text="Continue"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

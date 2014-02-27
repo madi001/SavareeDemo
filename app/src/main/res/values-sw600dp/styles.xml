@@ -26,6 +26,7 @@
     <style name="SignUpFormContainer">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+
         <item name="android:padding">16dp</item>
     </style>
 
@@ -34,5 +35,23 @@
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:padding">16dp</item>
     </style>
+    <style name="formButton" parent="android:Widget.Holo.Light.EditText">
+        <item name="android:background">@drawable/btn_next_bg</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">16dp</item>
+    </style>
 
+    <style name="driverformField" parent="android:Widget.Holo.Light.EditText">
+        <item name="android:background">@drawable/field_bg</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="maptextview" parent="android:Widget.Holo.Light.EditText">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>

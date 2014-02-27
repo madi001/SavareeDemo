@@ -4,7 +4,7 @@
 
     <LinearLayout
         style="@style/SignUpFormContainer"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="144dp"

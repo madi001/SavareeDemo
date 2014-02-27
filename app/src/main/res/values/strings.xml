@@ -10,5 +10,8 @@
     <string name="signUp">Not account? <font fgcolor="#ff0000ff">Sign Up!</font></string>
     <string name="title_activity_chooser">ChooserActivity</string>
     <string name="title_activity_actionbar">ActionbarActivity</string>
+    <string name="title_activity_route">RouteActivity</string>
+    <string name="title_activity_publish_route">PublishRouteActivity</string>
+    <string name="title_activity_passanger_home">PassangerHomeActivity</string>
 
 </resources>
