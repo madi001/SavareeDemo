@@ -1076,8 +1076,9 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f070018;
         public static final int action_menu_presenter=0x7f070019;
         public static final int action_mode_close_button=0x7f070027;
-        public static final int action_settings=0x7f07004c;
+        public static final int action_settings=0x7f070056;
         public static final int activity_chooser_view_content=0x7f070028;
+        public static final int address=0x7f07004f;
         public static final int always=0x7f070012;
         public static final int beginning=0x7f07000a;
         public static final int checkbox=0x7f070030;
@@ -1088,7 +1089,7 @@ containing a value of this type.
         public static final int disableHome=0x7f070008;
         public static final int dropdown=0x7f070016;
         public static final int edit_query=0x7f070033;
-        public static final int editprofile=0x7f07004a;
+        public static final int editprofile=0x7f070054;
         public static final int end=0x7f07000c;
         public static final int expand_activities_button=0x7f070029;
         public static final int expanded_menu=0x7f07002f;
@@ -1101,19 +1102,21 @@ containing a value of this type.
         public static final int list=0x7f070044;
         public static final int listMode=0x7f070001;
         public static final int list_item=0x7f07002c;
-        public static final int logout=0x7f07004b;
+        public static final int logout=0x7f070055;
         public static final int map=0x7f07003f;
-        public static final int message=0x7f070047;
+        public static final int message=0x7f070051;
         public static final int middle=0x7f07000b;
+        public static final int name=0x7f070048;
         public static final int never=0x7f070010;
         public static final int next=0x7f070042;
         public static final int none=0x7f070009;
         public static final int normal=0x7f070000;
-        public static final int notification=0x7f070048;
+        public static final int notification=0x7f070052;
         public static final int progress_circular=0x7f07001b;
         public static final int progress_horizontal=0x7f07001c;
         public static final int publish=0x7f070045;
         public static final int radio=0x7f070032;
+        public static final int rides=0x7f070049;
         public static final int routemap=0x7f070043;
         public static final int satellite=0x7f07000d;
         public static final int scroll=0x7f070040;
@@ -1127,12 +1130,18 @@ containing a value of this type.
         public static final int search_plate=0x7f070039;
         public static final int search_src_text=0x7f07003a;
         public static final int search_voice_btn=0x7f07003e;
+        public static final int seats=0x7f070050;
         public static final int shortcut=0x7f070031;
         public static final int showCustom=0x7f070007;
         public static final int showHome=0x7f070004;
         public static final int showTitle=0x7f070006;
         public static final int signin=0x7f070041;
         public static final int split_action_bar=0x7f070021;
+        public static final int star1=0x7f07004a;
+        public static final int star2=0x7f07004b;
+        public static final int star3=0x7f07004c;
+        public static final int star4=0x7f07004d;
+        public static final int star5=0x7f07004e;
         public static final int submit_area=0x7f07003c;
         public static final int tabMode=0x7f070002;
         public static final int terrain=0x7f07000e;
@@ -1140,7 +1149,8 @@ containing a value of this type.
         public static final int top_action_bar=0x7f070023;
         public static final int up=0x7f070024;
         public static final int useLogo=0x7f070003;
-        public static final int viewprofile=0x7f070049;
+        public static final int userpic=0x7f070047;
+        public static final int viewprofile=0x7f070053;
         public static final int withText=0x7f070013;
     }
     public static final class integer {

@@ -31,8 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableRight="@drawable/locationmarker"
-                android:hint="Add Pickup Points (seprated by commas)"
-                android:textSize="16dp"/>
+                android:hint="Add Pickup Points (seprated by commas)"/>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content">
@@ -43,8 +42,7 @@
                     android:layout_marginRight="8dp"
                     android:drawableRight="@drawable/user"
                     android:layout_weight="1"
-                    android:hint="open Seats"
-                    android:textSize="16dp"/>
+                    android:hint="open Seats"/>
                 <EditText
                     style="@style/formField"
                     android:layout_width="match_parent"
@@ -52,8 +50,7 @@
                     android:layout_marginLeft="8dp"
                     android:drawableRight="@drawable/car"
                     android:layout_weight="1"
-                    android:hint="Vehicle Model"
-                    android:textSize="16dp"/>
+                    android:hint="Vehicle Model"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -65,8 +62,7 @@
                     android:layout_marginRight="8dp"
                     android:drawableRight="@drawable/car"
                     android:layout_weight="1"
-                    android:hint="Vehicle Color"
-                    android:textSize="16dp"/>
+                    android:hint="Vehicle Color"/>
                 <EditText
                     style="@style/formField"
                     android:layout_width="match_parent"
@@ -74,8 +70,7 @@
                     android:layout_marginLeft="8dp"
                     android:drawableRight="@drawable/car"
                     android:layout_weight="1"
-                    android:hint="Number Plate"
-                    android:textSize="16dp"/>
+                    android:hint="Number Plate"/>
             </LinearLayout>
             <Button
                 android:id="@+id/publish"

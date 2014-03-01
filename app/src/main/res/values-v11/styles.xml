@@ -34,6 +34,7 @@
         <item name="android:background">@drawable/field_bg</item>
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:padding">16dp</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="driverformField" parent="android:Widget.Holo.Light.EditText">
