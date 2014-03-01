@@ -13,5 +13,6 @@
     <string name="title_activity_route">RouteActivity</string>
     <string name="title_activity_publish_route">PublishRouteActivity</string>
     <string name="title_activity_passanger_home">PassangerHomeActivity</string>
+    <string name="title_activity_detail__driver">Detail_DriverActivity</string>
 
 </resources>

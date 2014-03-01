@@ -72,13 +72,15 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name="com.demo.savareedemo.PassangerHomeActivity"
             android:label="@string/title_activity_passanger_home"
-            android:theme="@style/Theme.AppCompat.Light">
-
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.demo.savareedemo.Detail_DriverActivity"
+            android:label="@string/title_activity_detail__driver" >
         </activity>
     </application>
 
