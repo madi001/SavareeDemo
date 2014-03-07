@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:layout_marginLeft="15dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:PaddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_weight="1"
+        android:paddingRight="10dp"
+        android:PaddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        android:text="Lorem ipsum dolor sit amet, consecteture adipiscing elit, sed diam nonummy nibh euismod tincidun"
+        android:background="@drawable/field_bg"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:background="@drawable/triangle_right_listview"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/userpic"/>
+</LinearLayout>

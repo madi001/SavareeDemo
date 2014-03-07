@@ -67,11 +67,7 @@
             android:name="com.demo.savareedemo.PublishRouteActivity"
             android:label="@string/title_activity_publish_route"
             android:theme="@style/Theme.AppCompat.Light" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.demo.savareedemo.PassangerHomeActivity"
@@ -79,8 +75,33 @@
             android:theme="@style/Theme.AppCompat.Light" >
         </activity>
         <activity
+            android:name="com.demo.savareedemo.Tab1"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.demo.savareedemo.Tab2"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.demo.savareedemo.Tab4"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.demo.savareedemo.Tab3"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
             android:name="com.demo.savareedemo.Detail_DriverActivity"
-            android:label="@string/title_activity_detail__driver" >
+            android:label="@string/title_activity_detail__driver"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
