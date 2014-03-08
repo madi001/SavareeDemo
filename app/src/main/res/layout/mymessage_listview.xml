@@ -18,10 +18,6 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:PaddingTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:PaddingBottom="10dp"
         android:gravity="center_vertical"
         android:textSize="12sp"
         android:text="Lorem ipsum dolor sit amet, consecteture adipiscing elit, sed diam nonummy nibh euismod tincidun"
