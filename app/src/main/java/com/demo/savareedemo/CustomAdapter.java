@@ -71,6 +71,8 @@ public class CustomAdapter extends BaseAdapter implements View.OnClickListener {
         public ImageView star4;
         public ImageView star5;
 
+        public ImageView image;
+
     }
 
     /****** Depends upon data size called for each row , Create each ListView row *****/

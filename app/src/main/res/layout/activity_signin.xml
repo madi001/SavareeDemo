@@ -16,18 +16,23 @@
             style="@style/formField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:inputType="textEmailAddress"
             android:hint="Username@gmail.com" />
 
         <EditText
             style="@style/formField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
             android:hint="Password"/>
         <Button
             android:id="@+id/signin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/formButton"
+            android:focusableInTouchMode="false"
             android:text="SIGN IN"
             android:gravity="center"
             android:textColor="#fff"
@@ -36,14 +41,16 @@
         <RelativeLayout
             android:layout_width="fill_parent"
             android:background="@drawable/social_login_bg"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:layout_marginTop="32dp"
-            android:layout_height="wrap_content">
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp">
+                android:layout_marginLeft="10dp">
             <ImageView
                 android:layout_width="34dp"
                 android:layout_height="34dp"
@@ -60,10 +67,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="33dp"
                 android:textSize="12sp"
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="10dp"
                 android:gravity="center"
+                android:id="@+id/signup"
                 android:layout_alignParentRight="true"
-                android:text="Not account? Sign Up!" />
+                android:text="Not account?  Sign Up!" />
         </RelativeLayout>
     </LinearLayout>
 

@@ -14,6 +14,9 @@
             android:layout_height="match_parent"
             android:name="com.google.android.gms.maps.MapFragment"/>
     </LinearLayout>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="fill_parent"
         android:orientation="vertical"
@@ -83,6 +86,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/border"
             >
         <TextView
             android:layout_width="wrap_content"
@@ -106,7 +110,8 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -129,8 +134,9 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-            <TextView
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+           <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
                 android:padding="10dp"
@@ -141,9 +147,10 @@
                 android:layout_height="wrap_content"
                 android:text="jan 12, 2014"
                 android:padding="10dp"/>
-            <LinearLayout
+             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -159,7 +166,9 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
@@ -173,7 +182,9 @@
                 android:padding="10dp"/>
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -189,7 +200,8 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
@@ -201,9 +213,6 @@
                 android:layout_height="fill_parent"
                 android:text="Lxm-005"
                 android:padding="10dp"/>
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
@@ -218,26 +227,34 @@
             </LinearLayout>
 
         </LinearLayout>
+</ScrollView>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
         <Button
-            android:id="@+id/continue_btn"
-            android:layout_width="wrap_content"
+            android:id="@+id/view_profile"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="View Profile"
+            style="@style/nomarginactivity"
             android:gravity="center"
             android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:focusableInTouchMode="false"
             android:textSize="18sp" />
         <Button
-            android:id="@+id/continue_btn"
-            android:layout_width="wrap_content"
+            android:id="@+id/book_ride"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Book a Ride"
+            android:focusableInTouchMode="false"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            style="@style/nomarginactivity"
             android:gravity="center"
             android:textColor="#fff"
             android:textSize="18sp"/>
         </LinearLayout>
-    </LinearLayout>
 </LinearLayout>

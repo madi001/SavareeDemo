@@ -3,8 +3,56 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tab4"/>
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/userpic"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/triangle_bg"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textSize="12sp"
+            android:text="Lorem ipsum dolor sit amet, consecteture adipiscing elit, sed diam nonummy nibh euismod tincidun"
+            android:background="@drawable/field_bg"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textSize="12sp"
+            android:text="Lorem ipsum dolor sit amet, consecteture adipiscing elit, sed diam nonummy nibh euismod tincidun"
+            android:background="@drawable/field_bg"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:background="@drawable/triangle_right_listview"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/userpic"/>
+    </LinearLayout>
 </LinearLayout>

@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Maaz Ahmed"
+        android:id="@+id/name"
         android:textSize="16sp"
         android:textColor="#fd4e4f"/>
     <LinearLayout
@@ -51,6 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:id="@+id/comment"
         android:textColor="#919191"
         android:layout_marginTop="10dp"
         android:text="Lorem ipsum dolor sit amet, consecteture adipiscing elit, sed diam nonummy nibh euismod tincidun"

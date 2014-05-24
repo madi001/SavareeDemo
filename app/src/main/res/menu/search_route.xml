@@ -1,10 +1,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.demo.savareedemo.SearchRoute" >
-    
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
-        android:orderInCategory="100"
-        app:showAsAction="never" />
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="always"
+        android:id="@+id/message"
+        android:icon="@drawable/ic_action_messages"
+        android:orderInCategory="1"
+        android:title="Messages"/>
+    <item android:id="@+id/notification"
+        android:icon="@drawable/ic_action_bell"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:title="Notifications"/>
+    <item
+        android:id="@+id/viewprofile"
+        android:icon="@drawable/profile"
+        android:title="View Profile"/>
+    <item
+        android:id="@+id/editprofile"
+        android:icon="@drawable/edit"
+        android:title="Edit Profile"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Logout"/>
 </menu>

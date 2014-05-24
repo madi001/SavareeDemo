@@ -32,7 +32,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:drawableLeft="@drawable/locationmarker"
-                android:text="DHA, Phase 3, Lahore"
+                android:text="Lower Manhattan, New York"
                 android:layout_weight="1"/>
             <TextView
                 style="@style/maptextview"
@@ -50,7 +50,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:drawableLeft="@drawable/locationmarker"
-                android:text="Gulberg 2, Lahore"
+                android:text="Financial District, New York"
                 android:layout_weight="1"/>
             <TextView
                 style="@style/maptextview"
@@ -67,7 +67,7 @@
                 style="@style/maptextview"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:text="April 2, 2012"
+                android:text="May 25, 2014"
                 android:drawableLeft="@drawable/time"
                 android:layout_weight="1"/>
             <TextView
@@ -82,6 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/formButton"
+            android:focusableInTouchMode="false"
             android:text="Continue"
             android:gravity="center"
             android:textColor="#fff"

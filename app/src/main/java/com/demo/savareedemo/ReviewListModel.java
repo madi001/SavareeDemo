@@ -4,8 +4,8 @@ package com.demo.savareedemo;
  * Created by madi on 3/2/14.
  */
 public class ReviewListModel {
-    private  String Name="";
-    private  String comments="";
+    private  String Name = "";
+    private  String comments = "";
 
     /*********** Set Methods ******************/
 

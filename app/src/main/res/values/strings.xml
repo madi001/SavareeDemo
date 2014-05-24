@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Savaree</string>
+    <string name="app_name">Travelify</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_signup">SignupActivity</string>
@@ -15,5 +15,8 @@
     <string name="title_activity_passanger_home">PassangerHomeActivity</string>
     <string name="title_activity_detail__driver">Detail_DriverActivity</string>
     <string name="title_activity_search_route">SearchRoute</string>
+    <string name="title_activity_view_ride">ViewRide</string>
+    <string name="title_activity_search_ride">SearchRideActivity</string>
+    <string name="title_activity_draw_search_ride">DrawSearchRideActivity</string>
 
 </resources>

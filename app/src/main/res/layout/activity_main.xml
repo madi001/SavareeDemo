@@ -50,27 +50,32 @@
             style="@style/formField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email" />
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:id="@+id/email"/>
 
         <EditText
             style="@style/formField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:id="@+id/password"/>
 
         <EditText
             style="@style/formField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Conform Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:id="@+id/retrypass"/>
 
         <Button
             android:id="@+id/next"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/formButton"
+            android:focusableInTouchMode="false"
             android:text="NEXT"
             android:gravity="center"
             android:textColor="#fff"

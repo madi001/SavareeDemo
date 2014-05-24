@@ -1,6 +1,7 @@
 package com.demo.savareedemo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Criteria;
@@ -12,6 +13,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -21,6 +24,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.parse.ParseUser;
 
 public class ActionbarActivity extends ActionBarActivity {
 
@@ -42,6 +46,15 @@ public class ActionbarActivity extends ActionBarActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        Button getroute = (Button)findViewById(R.id.getroute);
+        getroute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActionbarActivity.this,RouteActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
 
@@ -69,7 +82,7 @@ public class ActionbarActivity extends ActionBarActivity {
                 googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
                 googleMap.addMarker(new MarkerOptions()
                         .position(new LatLng(location.getLatitude(), location.getLongitude()))
-                        .title("arbi Soft")
+                        .title("Hamad Hassan")
                         .alpha(0.7f)
                         .icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)));
 
@@ -109,6 +122,12 @@ public class ActionbarActivity extends ActionBarActivity {
                 return true;
             case R.id.message:
 
+                return true;
+            case R.id.logout:
+                ParseUser.logOut();
+                ParseUser currentUser = ParseUser.getCurrentUser();
+                Intent intent = new Intent(ActionbarActivity.this,SigninActivity.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

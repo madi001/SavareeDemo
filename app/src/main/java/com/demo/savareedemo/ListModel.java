@@ -8,6 +8,7 @@ public class ListModel {
     private  String seats="";
     private  String address="";
     private  String rides="";
+    private  String image="";
 
     /*********** Set Methods ******************/
 
@@ -31,6 +32,11 @@ public class ListModel {
         this.rides = rides;
     }
 
+    public void setImage(String image)
+    {
+        this.image = image;
+    }
+
     /*********** Get Methods ****************/
 
     public String getName()
@@ -51,5 +57,10 @@ public class ListModel {
     public String getRides()
     {
         return this.rides;
+    }
+
+    public String getImage()
+    {
+        return this.image;
     }
 }

@@ -17,8 +17,8 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:orientation="vertical"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="10dp"
         android:layout_height="fill_parent"
         android:layout_weight="1">
@@ -30,5 +30,34 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"/>
         </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/near_me"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Near Me"
+            style="@style/nomarginactivity"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:focusableInTouchMode="false"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/search_ride"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Ride"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            style="@style/nomarginactivity"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:focusableInTouchMode="false"
+            android:textSize="18sp"/>
     </LinearLayout>
 </LinearLayout>

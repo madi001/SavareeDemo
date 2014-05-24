@@ -59,12 +59,13 @@
                 android:hint="Date"/>
             </LinearLayout>
         <Button
-            android:id="@+id/signin"
+            android:id="@+id/getroute"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/formButton"
             android:text="Get Route"
             android:gravity="center"
+            android:focusableInTouchMode="false"
             android:layout_marginBottom="16dp"
             android:textColor="#fff"
             android:textSize="18sp" />

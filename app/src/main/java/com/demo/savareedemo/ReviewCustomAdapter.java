@@ -20,10 +20,10 @@ public class ReviewCustomAdapter extends BaseAdapter implements View.OnClickList
 
     /*********** Declare Used Variables *********/
     private Activity activity;
-    private ArrayList data;
+    private ArrayList<ReviewListModel> data;
     private static LayoutInflater inflater=null;
     public Resources res;
-    ListModel tempValues=null;
+    ReviewListModel tempValues=null;
     int i=0;
 
     /*************  CustomAdapter Constructor *****************/
@@ -61,13 +61,6 @@ public class ReviewCustomAdapter extends BaseAdapter implements View.OnClickList
 
         public TextView name;
         public TextView comment;
-
-        public ImageView star1;
-        public ImageView star2;
-        public ImageView star3;
-        public ImageView star4;
-        public ImageView star5;
-
     }
 
     /****** Depends upon data size called for each row , Create each ListView row *****/
@@ -85,12 +78,8 @@ public class ReviewCustomAdapter extends BaseAdapter implements View.OnClickList
 
             holder = new ViewHolder();
             holder.name = (TextView) vi.findViewById(R.id.name);
-            holder.comment=(TextView)vi.findViewById(R.id.address);
-            holder.star1=(ImageView)vi.findViewById(R.id.star1);
-            holder.star2=(ImageView)vi.findViewById(R.id.star2);
-            holder.star3=(ImageView)vi.findViewById(R.id.star3);
-            holder.star4=(ImageView)vi.findViewById(R.id.star4);
-            holder.star5=(ImageView)vi.findViewById(R.id.star5);
+            holder.comment=(TextView)vi.findViewById(R.id.comment);
+
 
             /************  Set holder with LayoutInflater ************/
 
@@ -107,13 +96,13 @@ public class ReviewCustomAdapter extends BaseAdapter implements View.OnClickList
         else
         {
             /***** Get each Model object from Arraylist ********/
-            tempValues=null;
-            tempValues = ( ListModel ) data.get( position );
+            tempValues = null;
+            tempValues = ( ReviewListModel ) data.get( position );
 
             /************  Set Model values in Holder elements ***********/
 
             holder.name.setText( tempValues.getName() );
-            holder.comment.setText( tempValues.getAddress() );
+            holder.comment.setText( tempValues.getComments() );
 
             /******** Set Item Click Listner for LayoutInflater for each row *******/
 

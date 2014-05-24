@@ -3,14 +3,22 @@ package com.demo.savareedemo;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TabHost;
 import android.widget.Toast;
+
+import com.parse.ParseUser;
 
 import java.util.ArrayList;
 
@@ -24,6 +32,8 @@ public class Detail_DriverActivity extends TabActivity implements TabHost.OnTabC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_driver);
+
+
 
         tabHost = getTabHost();
 
@@ -113,7 +123,7 @@ public class Detail_DriverActivity extends TabActivity implements TabHost.OnTabC
     public void setListData()
     {
 
-        for (int i = 0; i < 11; i++) {
+        for (int i = 0; i < 4; i++) {
 
             final ReviewListModel sched = new ReviewListModel();
 
@@ -142,8 +152,9 @@ public class Detail_DriverActivity extends TabActivity implements TabHost.OnTabC
     public boolean onCreateOptionsMenu(Menu menu) {
         
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.detail__driver, menu);
-        return true;
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.detail__driver, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -151,11 +162,21 @@ public class Detail_DriverActivity extends TabActivity implements TabHost.OnTabC
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.notification:
+                return true;
+            case R.id.message:
+
+                return true;
+            case R.id.logout:
+                ParseUser.logOut();
+                ParseUser currentUser = ParseUser.getCurrentUser();
+                Intent intent = new Intent(Detail_DriverActivity.this,SigninActivity.class);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 
 }

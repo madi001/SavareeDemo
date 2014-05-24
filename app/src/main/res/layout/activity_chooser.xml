@@ -9,6 +9,7 @@
         android:layout_margin ="20dp"
         android:gravity="center"
         android:layout_weight="1"
+        android:id="@+id/driver"
         android:layout_height="fill_parent">
         <ImageView
             android:layout_width="180dp"
@@ -31,6 +32,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
+        android:id="@+id/passenger"
         android:layout_margin ="20dp"
         android:gravity="center">
         <ImageView
